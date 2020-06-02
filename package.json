@@ -26,7 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "python",
-    "deploy-api": "python"
+    "deploy-api": "python",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
+    "cypress": "^4.7.0",
     "react-app-env": "^1.2.3"
   }
 }

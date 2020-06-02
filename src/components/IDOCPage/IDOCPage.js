@@ -59,7 +59,7 @@ function EmailForm(props) {
                                         control={<TextField className="error" name="IDOC_Number" inputRef={register({ required: true })} />}
                                         label="IDOC Number: &nbsp;"
                                         labelPlacement="start"
-                                        Props={{ style: { color: "white", fontSize: '3vh' } }}
+                                        /*Props={{ style: { color: "white", fontSize: '3vh' } }}*/
                                     />
                                     {errors.IDOC_Number && <p className="error">IDOC Number is required.</p>}
                                 </Grid>

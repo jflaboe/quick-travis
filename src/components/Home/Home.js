@@ -64,7 +64,7 @@ export default function Home() {
                 control={<TextField InputProps={{style:{ background: 'white', paddingLeft:10 }}}name="IDOC_Number" inputRef={register({ required: true })} />}
                 label="IDOC Number: &nbsp;"
                 labelPlacement="start"
-                Props={{style:{ color:"white" }}}
+                /*Props={{style:{ color:"white" }}}*/
               />
               {errors.IDOC_Number && <p className="error">IDOC Number is required.</p>}
             </Grid>

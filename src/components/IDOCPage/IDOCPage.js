@@ -61,7 +61,7 @@ function EmailForm(props) {
                                         labelPlacement="start"
                                         /*Props={{ style: { color: "white", fontSize: '3vh' } }}*/
                                     />
-                                    {errors.IDOC_Number && <p className="error">IDOC Number is required.</p>}
+                                    {errors.IDOC_Number && <p className="error">error</p>}
                                 </Grid>
                             </Grid>
                             <Grid container justify="center">

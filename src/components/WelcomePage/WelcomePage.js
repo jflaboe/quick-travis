@@ -8,7 +8,7 @@ function WelcomePage(props) {
     return (
         <div>
             <div className="welcomeContainer">
-                <h1>Freedom Link</h1>
+                <h1>Freedom Link 2.0</h1>
                 <h2>A simple way to advocate for the early release of a loved one from the Illinois Department of Corrections.</h2>
             </div>
             <div className="getStarted">

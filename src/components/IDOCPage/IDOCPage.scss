@@ -1,0 +1,27 @@
+.IDOCPage{
+    @extend .flexCenter;
+    height: 100vh;
+    padding: 30px;
+}
+
+.formContainer{
+    @extend .flexCenter;
+    height: 120%;
+    justify-content: space-between !important;
+}
+
+.inputContainer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 25px;
+
+    & span{
+        font-size: 25px;
+    }
+}
+
+.infoIcon{
+    color: $blue;
+}

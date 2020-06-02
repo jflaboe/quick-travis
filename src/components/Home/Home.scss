@@ -1,0 +1,33 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    &--small{
+      height: 100vh;
+    }
+  }
+  
+  .idocForm {
+    background-color: #2D3142;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+    color: white;
+  }
+  
+
+#Loading{
+  font-size: large;
+  color: black;
+}
+
+#outcome{
+  text-align: center;
+}
+
+h5{
+  text-align: center;
+}

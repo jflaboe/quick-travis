@@ -1,0 +1,26 @@
+.eligibilityPage{
+    @extend .IDOCPage;
+    margin-left: 7vw;
+    margin-right: 7vw;
+
+    & h2{
+        margin-top: -2vh;
+    }
+}
+
+.options{
+    display: flex;
+    padding: 10px 0 0 3vw;
+    height: 30px;
+}
+
+#criteria{
+    padding-left: 10px;
+    background-color: white;
+    width: 70vw;
+}
+
+#name{
+    text-align: left;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+.FAQ{
+  @extend .flexCenter;
+  width: 90%;
+  margin: 0 5%;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.question{
+  font-weight: bold;
+
+  &Container{
+    margin: 40px 0;
+    border-bottom: 1px solid gray;
+  }
+}

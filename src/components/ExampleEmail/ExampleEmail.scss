@@ -1,0 +1,11 @@
+.ExampleEmail{
+  @extend .flexCenter;
+  margin: 0 5%;
+
+  &__content{
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 5% 0;
+  }
+}

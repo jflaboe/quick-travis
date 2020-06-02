@@ -1,0 +1,22 @@
+.welcomeContainer{
+    @extend .flexCenter;
+    background-color: $lightblue;
+    height: 70vh;
+    padding: 0 7vw;
+    text-align: center;
+
+    & h1 {
+        font-size: 12vw;
+        color: $darkblue;
+        margin-bottom: 5% !important;
+    }
+}
+
+.getStarted {
+    padding-top: 5vh;
+    text-align: center;
+
+    &Link{
+        text-decoration: none;
+    }
+}

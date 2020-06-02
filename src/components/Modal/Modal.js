@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Modal.scss';
 import { Button, Dialog, DialogTitle, Typography, DialogContent, DialogContentText, DialogActions } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
-import { gapi }  from 'gapi-script';
+//import { gapi }  from 'gapi-script';
 import { Base64 }  from 'js-base64'
 
 const CLIENT_ID = '599434271054-0r34mipsobtakroniq4brsr99a6tlrls.apps.googleusercontent.com';
@@ -10,7 +10,7 @@ const API_KEY = 'AIzaSyA1eRqEnxINz0ZwtqPVpkiHp7Phds54G5Y';
 const DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"];
 const SCOPES = 'https://www.googleapis.com/auth/gmail.compose';
 
-function createEmail(to, from, subject, message) {
+/*function createEmail(to, from, subject, message) {
     let email = ["Content-Type: text/plain; charset=\"UTF-8\"\n",
       "MIME-Version: 1.0\n",
       "Content-Transfer-Encoding: 7bit\n",
@@ -40,7 +40,7 @@ function initClient(){
         console.log("error initializing api");
       });
 }
-loadClient();
+loadClient();*/
 
 function Modal(props){
 
@@ -49,16 +49,16 @@ function Modal(props){
     const [sendEmailConfirmationOpen, setSendEmailConfirmationOpen] = useState(false);
     console.log(isSignedIn);
     function signIn() {
-        gapi.auth2.getAuthInstance().isSignedIn.listen(setIsSignedIn);
+    /*    gapi.auth2.getAuthInstance().isSignedIn.listen(setIsSignedIn);
         if (gapi.auth2.getAuthInstance().isSignedIn.get()){
             setIsSignedIn(true);
         } else {
             gapi.auth2.getAuthInstance().signIn()
         }
-        
+     */   
     }
     function exportDraft(){
-        const userId = gapi.auth2.getAuthInstance().currentUser.get().getId();
+       /* const userId = gapi.auth2.getAuthInstance().currentUser.get().getId();
 
         gapi.client.gmail.users.getProfile({'userId': userId}).execute((response) => {
             var request = gapi.client.gmail.users.drafts.create({
@@ -78,11 +78,11 @@ function Modal(props){
                 gapi.auth2.getAuthInstance().signOut();
             })
         })
-        
+        */
     }
 
     function sendEmail(){
-        const userId = gapi.auth2.getAuthInstance().currentUser.get().getId();
+        /*const userId = gapi.auth2.getAuthInstance().currentUser.get().getId();
 
         gapi.client.gmail.users.getProfile({'userId': userId}).execute((response) => {
             var request = gapi.client.gmail.users.drafts.create({
@@ -111,7 +111,7 @@ function Modal(props){
                 
             })
         })
-        
+        */
     }
 
     function handleSendEmailConfirmationOpen() {

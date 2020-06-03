@@ -27,7 +27,9 @@
     "eject": "react-scripts eject",
     "deploy": "python",
     "deploy-api": "python",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:ci": "cypress run --config video=false",
+    "test:ci": "react-scripts test --watchAll=false && start-server-and-test start http://localhost:3000 cypress:ci"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +49,7 @@
   "devDependencies": {
     "@testing-library/react": "^9.5.0",
     "cypress": "^4.7.0",
-    "react-app-env": "^1.2.3"
+    "react-app-env": "^1.2.3",
+    "start-server-and-test": "^1.11.0"
   }
 }
